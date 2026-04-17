@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* ─── Brickline Design System ──────────────────────────────────────────────── */
+
+@theme inline {
+  /* Fuentes */
+  --font-serif:   var(--font-fraunces);
+  --font-sans:    var(--font-geist-sans);
+  --font-mono:    var(--font-jetbrains-mono);
+
+  /* Paleta Brickline */
+  --color-cream:        #F5F2ED;
+  --color-ink:          #0A0908;
+  --color-brick:        #C84B31;
+  --color-brick-dark:   #A33A23;
+  --color-brick-light:  #D96848;
+  --color-signal:       #FFD60A;
+  --color-warm-100:     #F5F2ED;
+  --color-warm-200:     #E8E2D8;
+  --color-warm-400:     #A89C8C;
+  --color-warm-700:     #3D3631;
+  --color-success:      #2F5D4E;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+
+:root {
+  --background: #F5F2ED;
+  --foreground: #0A0908;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Tipografía ────────────────────────────────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+/* ─── Grain overlay ─────────────────────────────────────────────────────────── */
+
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
+
+/* ─── Selección ─────────────────────────────────────────────────────────────── */
+
+::selection {
+  background: #C84B31;
+  color: #F5F2ED;
+}
