@@ -189,10 +189,8 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="mt-12 flex flex-col sm:flex-row gap-4" style={show("0.9s")}>
-          <a
-            href={DEMO_WA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => window.dispatchEvent(new CustomEvent("openDemoChat"))}
             className="inline-flex items-center gap-3 bg-[#C84B31] text-[#F5F2ED] px-8 py-4 hover:bg-[#A33A23] transition-colors duration-200 group"
             style={{
               fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
@@ -200,14 +198,17 @@ export function Hero() {
               fontWeight: 500,
               letterSpacing: "0.04em",
               borderRadius: "2px",
+              border: "none",
+              cursor: "pointer",
             }}
           >
-            <WhatsAppIcon />
             Probá la demo en vivo
             <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
-          </a>
+          </button>
           <a
-            href="/cotizador"
+            href={DEMO_WA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 border border-[#0A0908] text-[#0A0908] px-8 py-4 hover:bg-[#0A0908] hover:text-[#F5F2ED] transition-all duration-200 group"
             style={{
               fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
@@ -217,7 +218,8 @@ export function Hero() {
               borderRadius: "2px",
             }}
           >
-            Cotizar mi proyecto
+            <WhatsAppIcon />
+            Hablemos por WhatsApp
             <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
           </a>
         </div>

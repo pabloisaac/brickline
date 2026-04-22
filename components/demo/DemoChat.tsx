@@ -338,6 +338,12 @@ export function DemoChat({ onClose }: { onClose?: () => void }) {
 export function DemoChatWidget() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    const handler = () => setOpen(true);
+    window.addEventListener("openDemoChat", handler);
+    return () => window.removeEventListener("openDemoChat", handler);
+  }, []);
+
   return (
     <>
       <AnimatePresence>
