@@ -3,7 +3,6 @@ export type ProjectType =
   | "automatizacion"
   | "gestion"
   | "ecommerce"
-  | "app"
   | "afip"
   | "consultoria";
 
@@ -47,11 +46,6 @@ export const PROJECT_TYPES: Record<
     description: "Tienda online integrada con stock, pagos y AFIP",
     icon: "🛒",
   },
-  app: {
-    label: "App web / móvil",
-    description: "Aplicación a medida para tu equipo o tus clientes",
-    icon: "📱",
-  },
   afip: {
     label: "Integración AFIP",
     description: "Facturación electrónica automática con IA",
@@ -82,7 +76,6 @@ export const EXTRAS_BY_TYPE: Record<ProjectType, string[]> = {
     "Alertas por WhatsApp",
   ],
   gestion: [
-    "App móvil complementaria",
     "Reportes en PDF",
     "Integración AFIP",
     "Multi-sucursal",
@@ -92,18 +85,9 @@ export const EXTRAS_BY_TYPE: Record<ProjectType, string[]> = {
   ecommerce: [
     "MercadoPago / Modo",
     "Integración AFIP",
-    "App móvil",
     "Stock automático IA",
     "Email marketing",
     "Analytics con IA",
-  ],
-  app: [
-    "iOS + Android",
-    "Modo offline",
-    "Notificaciones push",
-    "IA integrada",
-    "Sincronización tiempo real",
-    "Panel de administración",
   ],
   afip: [
     "Múltiples puntos de venta",
@@ -128,7 +112,6 @@ const BASE_PRICES: Record<ProjectType, Record<Scope, number>> = {
   automatizacion:{ basico: 400,   estandar: 1000,  avanzado: 2800 },
   gestion:      { basico: 2500,  estandar: 6000,  avanzado: 14000 },
   ecommerce:    { basico: 1800,  estandar: 4000,  avanzado: 9000 },
-  app:          { basico: 3500,  estandar: 8000,  avanzado: 18000 },
   afip:         { basico: 900,   estandar: 2200,  avanzado: 5000 },
   consultoria:  { basico: 250,   estandar: 600,   avanzado: 1400 },
 };
@@ -150,7 +133,6 @@ const ESTIMATED_WEEKS: Record<ProjectType, Record<Scope, string>> = {
   automatizacion:{ basico: "1–2 semanas", estandar: "3–5 semanas", avanzado: "6–10 semanas" },
   gestion:      { basico: "6–8 semanas", estandar: "10–16 semanas", avanzado: "20–30 semanas" },
   ecommerce:    { basico: "3–5 semanas", estandar: "6–10 semanas", avanzado: "12–20 semanas" },
-  app:          { basico: "8–10 semanas", estandar: "14–20 semanas", avanzado: "24–36 semanas" },
   afip:         { basico: "2–3 semanas", estandar: "4–6 semanas", avanzado: "8–12 semanas" },
   consultoria:  { basico: "1 semana", estandar: "2–3 semanas", avanzado: "4–6 semanas" },
 };

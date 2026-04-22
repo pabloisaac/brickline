@@ -36,8 +36,8 @@ const services = [
     number: "05",
     title: "Desarrollo a medida",
     description:
-      "Apps web y móviles con IA integrada desde el día uno. Soluciones que se adaptan a tu negocio, no al revés.",
-    tags: ["Web", "Mobile", "IA"],
+      "Aplicaciones web con IA integrada desde el día uno. Soluciones que se adaptan a tu negocio, no al revés.",
+    tags: ["Web", "A medida", "IA"],
   },
   {
     number: "06",
