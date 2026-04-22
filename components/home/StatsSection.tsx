@@ -3,10 +3,10 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 
 const stats = [
-  { value: "+50", label: "Soluciones IA entregadas", sub: "Desde 2019" },
-  { value: "+35", label: "PyMEs automatizadas", sub: "Todo el país" },
-  { value: "24/7", label: "Bots en producción", sub: "Sin intervención humana" },
-  { value: "AFIP", label: "Integración certificada", sub: "Factura electrónica IA" },
+  { value: "24/7", label: "Atención automatizada", sub: "Sin intervención humana", accent: false },
+  { value: "<2min", label: "Tiempo de respuesta", sub: "En cualquier horario", accent: true },
+  { value: "7 días", label: "Tiempo de instalación", sub: "Desde el OK hasta producción", accent: false },
+  { value: "USD 120", label: "Desde por mes", sub: "Transparencia total", accent: false },
 ];
 
 export function StatsSection() {
@@ -23,6 +23,52 @@ export function StatsSection() {
       />
 
       <div className="relative z-10 max-w-[1400px] mx-auto">
+        {/* Pitch honesto de estudio nuevo */}
+        <FadeIn direction="up">
+          <div className="mb-20 max-w-2xl">
+            <span
+              className="font-mono text-xs tracking-[0.25em] uppercase"
+              style={{
+                fontFamily: "var(--font-jetbrains-mono), monospace",
+                color: "#FFD60A",
+              }}
+            >
+              Estudio nuevo · 2026
+            </span>
+            <h2
+              className="mt-4"
+              style={{
+                fontFamily: "var(--font-fraunces), Georgia, serif",
+                fontSize: "clamp(28px, 3.5vw, 48px)",
+                fontWeight: 600,
+                letterSpacing: "-0.02em",
+                lineHeight: 1.05,
+                color: "#F5F2ED",
+              }}
+            >
+              Buscamos los primeros 3 comercios
+              <br />
+              <span style={{ color: "#C84B31", fontStyle: "italic" }}>
+                para casos de estudio.
+              </span>
+            </h2>
+            <p
+              className="mt-5"
+              style={{
+                fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
+                fontSize: "16px",
+                color: "#A89C8C",
+                lineHeight: 1.7,
+                maxWidth: "480px",
+              }}
+            >
+              40% de descuento a cambio de testimonio en video. Sin letra chica, sin
+              permanencia. Si en 30 días no te sirve, lo apagamos.
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* Stats honestas */}
         <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-[#1a1614]">
           {stats.map((stat, i) => (
             <FadeIn key={stat.label} delay={i * 0.1} direction="up">
@@ -30,11 +76,11 @@ export function StatsSection() {
                 <div
                   style={{
                     fontFamily: "var(--font-fraunces), Georgia, serif",
-                    fontSize: "clamp(40px, 5vw, 64px)",
+                    fontSize: "clamp(36px, 4.5vw, 60px)",
                     fontWeight: 600,
                     letterSpacing: "-0.03em",
                     lineHeight: 1.0,
-                    color: i === 1 ? "#C84B31" : "#F5F2ED",
+                    color: stat.accent ? "#C84B31" : "#F5F2ED",
                   }}
                 >
                   {stat.value}

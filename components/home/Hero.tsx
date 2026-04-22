@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/ui/Logo";
-import Link from "next/link";
+
+const DEMO_WA_URL =
+  "https://wa.me/549XXXXXXXXXX?text=Hola!%20Quiero%20probar%20el%20demo%20del%20bot%20para%20tiendas.";
 
 function BrickWall() {
   const brickW = 80, brickH = 28, gap = 4, rows = 6, cols = 32;
@@ -107,7 +109,7 @@ export function Hero() {
             </a>
           ))}
           <a
-            href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Me%20interesa%20conocer%20los%20servicios%20de%20BlacklineIA."
+            href={DEMO_WA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#C84B31] text-[#F5F2ED] px-5 py-2.5 hover:bg-[#A33A23] transition-colors duration-200"
@@ -119,7 +121,7 @@ export function Hero() {
               borderRadius: "2px",
             }}
           >
-            Hablemos
+            Probá la demo
           </a>
         </div>
       </nav>
@@ -144,7 +146,7 @@ export function Hero() {
             className="font-mono text-xs tracking-[0.25em] text-[#C84B31] uppercase"
             style={{ fontFamily: "var(--font-jetbrains-mono), monospace" }}
           >
-            Argentina · IA para tu negocio
+            IA para comercios · Argentina
           </span>
         </div>
 
@@ -164,11 +166,11 @@ export function Hero() {
             transition: "opacity 1s cubic-bezier(0.22,1,0.36,1) 0.5s, transform 1s cubic-bezier(0.22,1,0.36,1) 0.5s",
           }}
         >
-          Inteligencia
+          Tu tienda,
           <br />
-          aplicada a tu
+          atendiendo sola
           <br />
-          <span style={{ color: "#C84B31", fontStyle: "italic" }}>negocio.</span>
+          <span style={{ color: "#C84B31", fontStyle: "italic" }}>las 24hs.</span>
         </h1>
 
         {/* Subheadline */}
@@ -180,32 +182,18 @@ export function Hero() {
               fontSize: "clamp(17px, 1.6vw, 21px)",
             }}
           >
-            Desarrollamos bots, automatizaciones e integraciones con IA
-            para PyMEs y comercios. Menos trabajo manual, más resultados.
+            Bots de WhatsApp que responden talles, stock, precios y reservas sin que toques
+            el celular. Instalado en 7 días, desde USD 120 por mes.
           </p>
         </div>
 
         {/* CTAs */}
         <div className="mt-12 flex flex-col sm:flex-row gap-4" style={show("0.9s")}>
           <a
-            href="/cotizador"
-            className="inline-flex items-center gap-3 bg-[#0A0908] text-[#F5F2ED] px-8 py-4 hover:bg-[#3D3631] transition-colors duration-200 group"
-            style={{
-              fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
-              fontSize: "14px",
-              fontWeight: 500,
-              letterSpacing: "0.04em",
-              borderRadius: "2px",
-            }}
-          >
-            Cotizá tu proyecto
-            <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
-          </a>
-          <a
-            href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Vi%20BlacklineIA%20y%20me%20interesa%20consultar."
+            href={DEMO_WA_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 border border-[#C84B31] text-[#C84B31] px-8 py-4 hover:bg-[#C84B31] hover:text-[#F5F2ED] transition-all duration-200 group"
+            className="inline-flex items-center gap-3 bg-[#C84B31] text-[#F5F2ED] px-8 py-4 hover:bg-[#A33A23] transition-colors duration-200 group"
             style={{
               fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
               fontSize: "14px",
@@ -215,12 +203,52 @@ export function Hero() {
             }}
           >
             <WhatsAppIcon />
-            Consultanos
+            Probá la demo en vivo
+            <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+          </a>
+          <a
+            href="/cotizador"
+            className="inline-flex items-center gap-3 border border-[#0A0908] text-[#0A0908] px-8 py-4 hover:bg-[#0A0908] hover:text-[#F5F2ED] transition-all duration-200 group"
+            style={{
+              fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
+              fontSize: "14px",
+              fontWeight: 500,
+              letterSpacing: "0.04em",
+              borderRadius: "2px",
+            }}
+          >
+            Cotizar mi proyecto
+            <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
           </a>
         </div>
 
+        {/* Trust indicator */}
+        <div className="mt-6 flex items-center gap-2" style={show("1.0s")}>
+          <span
+            className="animate-pulse"
+            style={{
+              width: 8,
+              height: 8,
+              borderRadius: "50%",
+              background: "#2F5D4E",
+              display: "inline-block",
+              flexShrink: 0,
+            }}
+          />
+          <span
+            style={{
+              fontFamily: "var(--font-jetbrains-mono), monospace",
+              fontSize: "11px",
+              letterSpacing: "0.1em",
+              color: "#A89C8C",
+            }}
+          >
+            Demo funcionando ahora mismo · Hablá con el bot y probalo
+          </span>
+        </div>
+
         {/* Index label */}
-        <div className="mt-16" style={show("1.05s")}>
+        <div className="mt-12" style={show("1.05s")}>
           <div className="flex items-center gap-3">
             <div className="w-8 h-px bg-[#A89C8C]" />
             <span
@@ -231,7 +259,7 @@ export function Hero() {
                 letterSpacing: "0.2em",
               }}
             >
-              01 / IA · BOTS · AUTOMATIZACIONES
+              01 / BOTS · WHATSAPP · COMERCIOS
             </span>
           </div>
         </div>

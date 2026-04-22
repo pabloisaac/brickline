@@ -4,6 +4,7 @@ import { ServicesSection } from "@/components/home/ServicesSection";
 import { ProcessSection } from "@/components/home/ProcessSection";
 import { StatsSection } from "@/components/home/StatsSection";
 import { CTASection } from "@/components/home/CTASection";
+import { DemoChatWidget } from "@/components/demo/DemoChat";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <StatsSection />
       <ProcessSection />
       <CTASection />
+      <DemoChatWidget />
     </main>
   );
 }
