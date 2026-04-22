@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "@/components/ui/Logo";
 
 const DEMO_WA_URL =
-  "https://wa.me/549XXXXXXXXXX?text=Hola!%20Quiero%20probar%20el%20demo%20del%20bot%20para%20tiendas.";
+  "https://wa.me/5492657562123?text=Hola!%20Quiero%20probar%20el%20demo%20del%20bot%20para%20tiendas.";
 
 function BrickWall() {
   const brickW = 80, brickH = 28, gap = 4, rows = 6, cols = 32;

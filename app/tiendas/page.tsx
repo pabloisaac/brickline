@@ -9,8 +9,8 @@ export const metadata: Metadata = {
     "Automatizá las consultas de stock, talles y precios de tu tienda de indumentaria. Bot de WhatsApp instalado en 7 días, desde USD 120 por mes.",
 };
 
-const DEMO_WA = "https://wa.me/549XXXXXXXXXX?text=Hola!%20Quiero%20probar%20el%20demo%20del%20bot%20para%20tiendas.";
-const CONTACT_WA = "https://wa.me/549XXXXXXXXXX?text=Hola!%20Quiero%20ser%20uno%20de%20los%20primeros%203%20clientes%20de%20BlacklineIA.";
+const DEMO_WA = "https://wa.me/5492657562123?text=Hola!%20Quiero%20probar%20el%20demo%20del%20bot%20para%20tiendas.";
+const CONTACT_WA = "https://wa.me/5492657562123?text=Hola!%20Quiero%20ser%20uno%20de%20los%20primeros%203%20clientes%20de%20BlacklineIA.";
 
 const problems = [
   {
