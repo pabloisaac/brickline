@@ -423,7 +423,7 @@ function StepResult({ data, result }: { data: QuoteData; result: QuoteResult }) 
 
       {/* CTA */}
       <a
-        href={`https://wa.me/549XXXXXXXXXX?text=${waMsg}`}
+        href={`https://wa.me/5492657562123?text=${waMsg}`}
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center gap-3 bg-[#C84B31] text-[#F5F2ED] px-8 py-4 hover:bg-[#A33A23] active:scale-95 transition-all duration-200"
