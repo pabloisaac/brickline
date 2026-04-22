@@ -3,19 +3,19 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 
 const problemas = [
-  "Responder consultas repetitivas consume horas al día",
-  "Procesos manuales que una IA podría hacer en segundos",
-  "Datos dispersos sin análisis ni automatización",
-  "Facturación y administración que frena el crecimiento",
-  "Sin visibilidad en tiempo real de lo que pasa en el negocio",
+  "Respondés las mismas preguntas de stock y talles todos los días",
+  "Perdés ventas fuera de horario sin nadie que atienda",
+  "Las consultas por WhatsApp se pierden sin seguimiento",
+  "Reservas sin confirmar que terminan en ventas perdidas",
+  "No sabés qué productos generan más consultas ni cuándo",
 ];
 
 const soluciones = [
-  "Bots que atienden clientes 24/7 en WhatsApp y redes",
-  "Automatizaciones que eliminan el trabajo repetitivo",
-  "Dashboards inteligentes con métricas que importan",
-  "Integración AFIP + IA para facturación sin fricción",
-  "Sistemas conectados que aprenden y mejoran con el tiempo",
+  "Bot que responde stock, talles y precios 24/7 en WhatsApp",
+  "Reservas automáticas con nombre, talle y forma de pago",
+  "Derivación a humano cuando la venta está caliente",
+  "Catálogo actualizable sin tocar código",
+  "Estadísticas reales: consultas, horarios pico, talles más pedidos",
 ];
 
 export function ProblemaSection() {
@@ -155,8 +155,8 @@ export function ProblemaSection() {
                     lineHeight: 1.6,
                   }}
                 >
-                  Cada solución IA parte de entender tu negocio. Sin templates
-                  genéricos — inteligencia aplicada a tu operación real.
+                  Cada bot parte de entender tu tienda: catálogo real, horarios
+                  reales, preguntas reales. Sin templates genéricos.
                 </p>
               </div>
             </FadeIn>

@@ -96,11 +96,11 @@ export function CTASection() {
                 color: "#0A0908",
               }}
             >
-              ¿Listo para
+              ¿Tu tienda sigue
               <br />
-              aplicar IA
+              respondiendo a mano
               <br />
-              <span style={{ color: "#C84B31", fontStyle: "italic" }}>a tu negocio?</span>
+              <span style={{ color: "#C84B31", fontStyle: "italic" }}>las consultas?</span>
             </h2>
           </FadeIn>
 
@@ -134,7 +134,7 @@ export function CTASection() {
                 <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
               </a>
               <a
-                href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Quiero%20arrancar%20un%20proyecto%20con%20BlacklineIA."
+                href="https://wa.me/5492657562123?text=Hola!%20Quiero%20arrancar%20un%20proyecto%20con%20BlacklineIA."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 bg-[#C84B31] text-[#F5F2ED] px-10 py-5 hover:bg-[#A33A23] active:scale-95 transition-all duration-200"
@@ -193,7 +193,7 @@ export function CTASection() {
                 letterSpacing: "0.1em",
               }}
             >
-              Inteligencia aplicada a tu negocio.
+              Bots de WhatsApp para comercios argentinos.
             </span>
           </div>
         </div>

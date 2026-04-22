@@ -7,8 +7,9 @@ const services = [
     number: "01",
     title: "Bots & Asistentes IA",
     description:
-      "Bots para WhatsApp, web y redes sociales que atienden consultas, generan cotizaciones y cierran ventas las 24hs sin intervención humana.",
+      "Bots para WhatsApp que atienden stock, talles, precios y reservas las 24hs. Instalado en tu número real, con tu catálogo, en 7 días.",
     tags: ["WhatsApp", "ChatBot", "24/7"],
+    highlight: true,
   },
   {
     number: "02",
@@ -16,7 +17,6 @@ const services = [
     description:
       "Eliminamos el trabajo manual con flujos inteligentes: procesamiento de pedidos, notificaciones automáticas, reportes y mucho más.",
     tags: ["n8n", "Zapier", "APIs"],
-    highlight: true,
   },
   {
     number: "03",
@@ -110,8 +110,8 @@ export function ServicesSection() {
                 lineHeight: 1.7,
               }}
             >
-              Soluciones IA pensadas para el mercado argentino y la
-              realidad operativa de las PyMEs locales.
+              Empezamos por WhatsApp. Después escalamos al resto
+              de la operación si tiene sentido para tu negocio.
             </p>
           </FadeIn>
         </div>

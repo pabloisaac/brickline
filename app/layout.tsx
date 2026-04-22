@@ -22,13 +22,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BlacklineIA — Inteligencia aplicada a tu negocio",
+  title: "BlacklineIA — Bots de WhatsApp para comercios argentinos",
   description:
-    "Desarrollamos bots, automatizaciones e integraciones con IA para PyMEs y comercios en Argentina. Tu negocio, potenciado con inteligencia artificial.",
+    "Instalamos bots de WhatsApp en tu tienda que responden stock, talles y precios las 24hs. Listo en 7 días, desde USD 120 por mes.",
   metadataBase: new URL("https://blacklineia.com.ar"),
   openGraph: {
-    title: "BlacklineIA — Inteligencia aplicada a tu negocio",
-    description: "Bots, automatizaciones e IA para tu negocio en Argentina.",
+    title: "BlacklineIA — Bots de WhatsApp para comercios argentinos",
+    description: "Tu tienda atendiendo sola las 24hs. Bot instalado en 7 días, desde USD 120/mes.",
     locale: "es_AR",
     type: "website",
   },
